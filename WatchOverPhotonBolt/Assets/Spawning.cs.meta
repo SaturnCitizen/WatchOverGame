@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 20341e10cfb7fc745a804c6353378a0d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - enemy: {fileID: -6857546317031207279, guid: e17bd46cd81d0694f8f5e92199e5e267,
+      type: 3}
+  - Town: {fileID: 79402320120173464, guid: 83294de617f8ec8488b7c0e5b20c2074, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

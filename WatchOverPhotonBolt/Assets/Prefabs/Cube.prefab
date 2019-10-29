@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2703267593056713813}
   - component: {fileID: 2431119583469172046}
   - component: {fileID: -4462065929982551697}
+  - component: {fileID: -8659487479411966491}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -134,3 +135,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21e8a9479c534c643ad39b99099d2470, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-8659487479411966491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7600488943508778422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20341e10cfb7fc745a804c6353378a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: -6857546317031207279, guid: e17bd46cd81d0694f8f5e92199e5e267, type: 3}
+  Town: {fileID: 79402320120173464, guid: 83294de617f8ec8488b7c0e5b20c2074, type: 3}
+  MaxDist: 5
+  MinDist: 3
