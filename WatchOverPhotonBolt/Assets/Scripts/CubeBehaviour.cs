@@ -15,16 +15,6 @@ public class CubeBehaviour : Bolt.EntityBehaviour<IKingState>
         state.AddCallback("CubeColor", ColorChanged);
     }
 
-    void OnGUI()
-    {
-        if (entity.IsOwner)
-        {
-            GUI.color = state.CubeColor;
-            GUILayout.Label("Watch Over Session");
-            GUI.color = Color.white;
-        }
-    }
-
     public override void SimulateOwner()
     {
         var speed = 8f;
@@ -45,4 +35,5 @@ public class CubeBehaviour : Bolt.EntityBehaviour<IKingState>
     {
         GetComponent<Renderer>().material.color = state.CubeColor;
     }
+
 }

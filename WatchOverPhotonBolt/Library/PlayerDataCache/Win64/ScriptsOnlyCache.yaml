@@ -1,8 +1,13 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - CampfireBehaviour
     - CubeBehaviour
+    - EnemyBehaviour
     - Menu
+    - NetworkSpawner
+    - WallBehaviour
+    - WallSpawning
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     bolt.dll:
@@ -13,6 +18,27 @@ ScriptsOnlyBuild:
     - BoltEditorWindow
     - BoltProjectWindow
   sceneClasses:
+    Assets/Scenes/LoseScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
     Assets/Scenes/Menu.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -32,6 +58,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
@@ -41,16 +69,28 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 10134}
+      Script: {instanceID: 9238}
     - Class: 114
-      Script: {instanceID: 10326}
+      Script: {instanceID: 9972}
+    - Class: 114
+      Script: {instanceID: 10142}
     - Class: 114
       Script: {instanceID: 10334}
     - Class: 114
-      Script: {instanceID: 10358}
+      Script: {instanceID: 10342}
     - Class: 114
-      Script: {instanceID: 11852}
+      Script: {instanceID: 10366}
+    - Class: 114
+      Script: {instanceID: 17202}
+    - Class: 114
+      Script: {instanceID: 33578}
+    - Class: 114
+      Script: {instanceID: 33584}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -73,8 +113,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 64
-      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
@@ -83,11 +121,21 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 17518}
+    - Class: 115
+      Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 9b5f75c225870ee5e96e85bb50165dad
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WallSpawning
   - hash:
       serializedVersion: 2
       Hash: 984dcc0ba3707b7691fbdca8ff508d28
@@ -588,6 +636,12 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CubeBehaviour
+  - hash:
+      serializedVersion: 2
       Hash: 11df54cb47bd74c537f3c732a94ea97d
     assemblyName: PhotonRealtime.dll
     namespaceName: Photon.Realtime
@@ -852,12 +906,31 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
+      Hash: 06312a1995ebaebf0e71d4cdc8c8ea88
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyBehaviour
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: CubeBehaviour
+    className: NetworkSpawner
+  - hash:
+      serializedVersion: 2
+      Hash: 8e7a4c2bb8bff823020b233522e17f54
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WallBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 44b3900937e071d65f21f2d1cf34b8a5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CampfireBehaviour
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/SampleScene.unity
+  - Assets/Scenes/LoseScene.unity
   playerPath: C:/Users/trist/Desktop/buildwatchover/WatchOverPhotonBolt.exe

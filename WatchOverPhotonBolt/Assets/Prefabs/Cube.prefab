@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 205680118320374854}
   - component: {fileID: 7996716929710176665}
   - component: {fileID: 824255061937502240}
-  - component: {fileID: 2703267593056713813}
   - component: {fileID: 2431119583469172046}
   - component: {fileID: -4462065929982551697}
-  - component: {fileID: -8659487479411966491}
+  - component: {fileID: 1417459083619444631}
+  - component: {fileID: -8052774474893572800}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81,19 +81,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &2703267593056713813
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7600488943508778422}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2431119583469172046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,7 +95,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sceneGuid: 
   _serializerGuid: dc0eb8e3-e379-418b-a667-9551024f74ca
-  _prefabId: 1
+  _prefabId: 3
   _updateRate: 1
   _autoFreezeProxyFrames: 0
   _clientPredicted: 1
@@ -135,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21e8a9479c534c643ad39b99099d2470, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-8659487479411966491
+--- !u!114 &1417459083619444631
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,7 +134,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20341e10cfb7fc745a804c6353378a0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: -6857546317031207279, guid: e17bd46cd81d0694f8f5e92199e5e267, type: 3}
-  Town: {fileID: 79402320120173464, guid: 83294de617f8ec8488b7c0e5b20c2074, type: 3}
-  MaxDist: 5
-  MinDist: 3
+  localMoney: 0
+--- !u!65 &-8052774474893572800
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7600488943508778422}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
