@@ -20,11 +20,9 @@ public class CampfireBehaviour : Bolt.EntityBehaviour<ICampfireState>
         if (localCampfireHealth <= 0)
         {
             BoltNetwork.Destroy(gameObject);
-            if (loseTimeLeft < 0 && BoltNetwork.IsServer)
+            if (loseTimeLeft < 0)
             {
-                string matchName = "Test";
-                BoltNetwork.SetServerInfo(matchName, null);
-                BoltNetwork.LoadScene("SampleScene");
+                BoltNetwork.Shutdown();
             }
 
         }
